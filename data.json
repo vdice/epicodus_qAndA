@@ -1,0 +1,45 @@
+{
+  "questions": [
+    {
+      "query": "How Do I learn Ember?",
+      "notes": "In the best fashion.",
+      "author": "Barefoot Codessa"
+    }, {
+      "query": "How Do I learn JavaScript?",
+      "notes": "In the best fashion.",
+      "author": "Barefoot Codessa"
+    }, {
+      "query": "How Do I learn Ruby?",
+      "notes": "In the best fashion.",
+      "author": "Barefoot Codessa"
+    }, {
+      "query": "How Do I learn Rails?",
+      "notes": "In the best fashion.",
+      "author": "Barefoot Codessa"
+    }
+  ],
+  "answers": [
+    {
+      "content": "Practice.",
+      "author": "Sensei Chipmunk"
+    }, {
+      "content": "Practice.",
+      "author": "Sensei Chipmunk"
+    }, {
+      "content": "Practice.",
+      "author": "Sensei Chipmunk"
+    }, {
+      "content": "Practice.",
+      "author": "Sensei Chipmunk"
+    }
+  ],
+  "users": [
+    {
+      "name": "Barefoot Codessa"
+    }, {
+      "name": "Sensei Chipmunk"
+    }, {
+      "name": "Ballake Sissoko"
+    }
+  ]
+}

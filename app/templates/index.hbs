@@ -2,10 +2,4 @@
   <h2>Q & A Message Board</h2>
 </div>
 
-<ul>
-  {{#each model.questions as |question|}}
-    <li>
-      {{question-preview question=question}}
-    </li>
-  {{/each}}
-</ul>
+{{question-listing questions=model.questions}}

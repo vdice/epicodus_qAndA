@@ -1,5 +1,6 @@
 <div class="jumbotron">
   <h2>{{question.query}}</h2>
+  {{add-answer question=question addAnswer="addAnswer"}}
 </div>
 
 <h3>
@@ -9,7 +10,16 @@
 <h3>Notes:</h3>
 <div class="container">
   {{question.notes}}
-</div><br><br>
+</div>
+
+<h3>Answers:</h3>
+<div class="container">
+  <ul>
+    {{#each sortedAnswers as |answer|}}
+      <li><i>{{answer.author}}</i>: <strong>{{answer.content}}</strong></li>
+    {{/each}}
+  </ul>
+</div>
 
 {{#link-to 'edit-question' question.id}}
   <button class="btn btn-primary">Edit</button>

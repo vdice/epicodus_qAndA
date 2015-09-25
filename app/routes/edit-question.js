@@ -21,7 +21,6 @@ export default Ember.Route.extend({
         }
       });
 
-      var self = this;
       question.save();
     }
   }

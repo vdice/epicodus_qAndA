@@ -1,7 +1,16 @@
-<h2>
-  {{question.query}}<br>
-  <small><i>{{question.author}}</i></small>
-</h2>
+<div class="jumbotron">
+  <h2>{{question.query}}</h2>
+</div>
+
+<h3>
+  {{#link-to 'edit-question' question.id}}
+    <button class="btn btn-primary">Edit</button>
+  {{/link-to}}
+  <button class="btn btn-danger" {{action 'deleteQuestion' question}}>
+    Delete
+  </button><br><br>
+  <small><i>author: {{question.author}}</i></small>
+</h3>
 
 <h3>Notes:</h3>
 <div class="container">

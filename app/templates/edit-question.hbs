@@ -1,0 +1,25 @@
+<div class="jumbotron">
+  <h2>Edit Question</h2>
+</div>
+
+<div class="container">
+  <form class="form-horizontal">
+    <div class="form-group">
+      <label for="query">Query</label>
+      {{input value=model.question.query id="query" class="form-control" placeholder=model.question.query}}
+    </div>
+
+    <div class="form-group">
+      <label for="notes">Notes</label>
+      {{textarea row="4" cols="50" value=model.question.notes id="notes" class="form-control" placeholder=model.question.notes}}
+    </div>
+
+    <div class="form-group">
+      <label for="author">Author</label>
+      {{input value=model.question.author id="author" class="form-control" placeholder=model.question.author}}
+    </div>
+
+    {{#link-to 'question' model.question.id}}<button class="btn btn-success"{{action 'updateQuestion' model.question}}>Save</button>{{/link-to}}
+    {{#link-to 'question' model.question.id}}<button class="btn btn-danger">Cancel</button>{{/link-to}}
+  </form>
+</div>

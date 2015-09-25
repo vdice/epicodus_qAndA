@@ -21,5 +21,12 @@
     <script src="assets/q-and-a.js"></script>
 
     {{content-for 'body-footer'}}
+
+    <script type="text/javascript">
+     $(document).on('click', '.nav-list li', function() {
+         $(".nav-list li").removeClass("active");
+         $(this).addClass("active");
+     });
+    </script>
   </body>
 </html>

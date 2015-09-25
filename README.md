@@ -1,7 +1,8 @@
-# Q-and-a
+# Q-and-A
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+_**Question and Answer Board.**_
+
+_Users can submit a question and other users can respond with answers._
 
 ## Prerequisites
 
@@ -50,4 +51,3 @@ Specify what it takes to deploy your app.
 * Development Browser Extensions
   * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
   * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
-

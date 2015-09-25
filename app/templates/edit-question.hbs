@@ -19,7 +19,14 @@
       {{input value=model.question.author id="author" class="form-control" placeholder=model.question.author}}
     </div>
 
-    {{#link-to 'question' model.question.id}}<button class="btn btn-success"{{action 'updateQuestion' model.question}}>Save</button>{{/link-to}}
-    {{#link-to 'question' model.question.id}}<button class="btn btn-danger">Cancel</button>{{/link-to}}
+    <!-- Save -->
+    {{#link-to 'question' model.question.id}}
+      <button class="btn btn-success"{{action 'updateQuestion' model.question}}>Save</button>
+    {{/link-to}}
+
+    <!-- Cancel -->
+    {{#link-to 'question' model.question.id}}
+      <button class="btn btn-danger">Cancel</button>
+    {{/link-to}}
   </form>
 </div>

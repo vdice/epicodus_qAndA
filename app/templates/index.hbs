@@ -5,12 +5,7 @@
 <ul>
   {{#each model.questions as |question|}}
     <li>
-      {{#link-to 'question' question.id}}
-        <h3>
-          {{question.query}}
-          <small><i>author: {{question.author}}</i></small>
-        </h3>
-      {{/link-to}}
+      {{question-preview question=question}}
     </li>
   {{/each}}
 </ul>

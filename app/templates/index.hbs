@@ -1,10 +1,12 @@
 <ul>
   {{#each model.questions as |question|}}
     <li>
-      <h3>
-        {{question.query}}
-        <small><i>by {{question.author}}</i></small>
-      </h3>
+      {{#link-to 'question' question.id}}
+        <h3>
+          {{question.query}}
+          <small><i>by {{question.author}}</i></small>
+        </h3>
+      {{/link-to}}
     </li>
   {{/each}}
 </ul>

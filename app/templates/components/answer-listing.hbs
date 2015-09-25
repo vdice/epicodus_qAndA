@@ -4,7 +4,7 @@
     <li>
       {{#if displayQuestion}}
         <p class="question">
-          Q: {{answer.question.query}}
+          Q: {{#link-to 'question' answer.question.id}}{{answer.question.query}}{{/link-to}}
         </p>
       {{/if}}
       <h4>

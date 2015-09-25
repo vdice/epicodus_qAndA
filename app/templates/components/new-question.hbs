@@ -1,22 +1,20 @@
-<div class="jumbotron">
-  <h2>Ask a Question</h2>
-</div>
+{{jumbotron-header header='Ask a Question'}}
 
 <div class="container">
   <form class="form-horizontal">
     <div class="form-group">
       <label for="query">Query</label>
-      {{input value=query id="query" class="form-control"}}
+      {{input value=query id="query" class="form-control" placeholder="What do you need answered?"}}
     </div>
 
     <div class="form-group">
       <label for="notes">Notes</label>
-      {{textarea row="4" cols="50" value=notes id="notes" class="form-control"}}
+      {{textarea row="4" cols="50" value=notes id="notes" class="form-control" placeholder="Add additional notes here..."}}
     </div>
 
     <div class="form-group">
       <label for="author">Author</label>
-      {{input value=author id="author" class="form-control"}}
+      {{input value=author id="author" class="form-control" placeholder="Anonymous"}}
     </div>
   </form>
 </div>

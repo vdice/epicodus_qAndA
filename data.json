@@ -3,43 +3,42 @@
     {
       "query": "How Do I learn Ember?",
       "notes": "In the best fashion.",
-      "author": "Barefoot Codessa"
+      "author": "Barefoot Codessa",
+      "answers": {"0": true}
     }, {
       "query": "How Do I learn JavaScript?",
       "notes": "In the best fashion.",
-      "author": "Barefoot Codessa"
+      "author": "Barefoot Codessa",
+      "answers": {"1": true}
     }, {
       "query": "How Do I learn Ruby?",
       "notes": "In the best fashion.",
-      "author": "Barefoot Codessa"
+      "author": "Barefoot Codessa",
+      "answers": {"2": true}
     }, {
       "query": "How Do I learn Rails?",
       "notes": "In the best fashion.",
-      "author": "Barefoot Codessa"
+      "author": "Barefoot Codessa",
+      "answers": {"3": true}
     }
   ],
   "answers": [
     {
       "content": "Practice.",
-      "author": "Sensei Chipmunk"
+      "author": "Sensei Chipmunk",
+      "question": "0"
     }, {
       "content": "Practice.",
-      "author": "Sensei Chipmunk"
+      "author": "Sensei Chipmunk",
+      "question": "1"
     }, {
       "content": "Practice.",
-      "author": "Sensei Chipmunk"
+      "author": "Sensei Chipmunk",
+      "question": "2"
     }, {
       "content": "Practice.",
-      "author": "Sensei Chipmunk"
-    }
-  ],
-  "users": [
-    {
-      "name": "Barefoot Codessa"
-    }, {
-      "name": "Sensei Chipmunk"
-    }, {
-      "name": "Ballake Sissoko"
+      "author": "Sensei Chipmunk",
+      "question": "3"
     }
   ]
 }

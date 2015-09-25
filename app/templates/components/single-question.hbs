@@ -1,21 +1,15 @@
 <div class="jumbotron">
   <h2>
-    {{question.query}}<br>
+    {{question.query}}{{modify-question question=question deleteQuestion="deleteQuestion"}}<br>
     <small><i>{{question.author}}</i></small>
   </h2>
-  {{add-answer question=question addAnswer="addAnswer"}}
 </div>
 
 <h3>Notes:</h3>
 <div class="container">
   <i>{{question.notes}}</i>
-</div>
+</div><br>
+
+{{add-answer question=question addAnswer="addAnswer"}}
 
 {{answer-listing answers=question.answers}}
-
-{{#link-to 'edit-question' question.id}}
-  <button class="btn btn-primary">Edit</button>
-{{/link-to}}
-<button class="btn btn-danger" {{action 'deleteQuestion' question}}>
-  Delete
-</button>

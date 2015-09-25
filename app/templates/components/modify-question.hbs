@@ -1,0 +1,11 @@
+<!-- Edit -->
+{{#link-to 'edit-question' question.id}}
+  <button class="btn btn-success">
+    <i class="fa fa-pencil"></i>
+  </button>
+{{/link-to}}
+
+<!-- Delete -->
+<button class="btn btn-danger" {{action 'deleteQuestion' question}}>
+  <i class="fa fa-trash"></i>
+</button>

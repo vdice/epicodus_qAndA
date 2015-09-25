@@ -5,11 +5,20 @@
   </h2>
 </div>
 
-<h3>Notes:</h3>
 <div class="container">
-  <i>{{question.notes}}</i>
-</div><br>
+  <div class="row">
+    <div class="col-xs-12 col-sm-6 col-lg-8">
+      <h3><i>Notes</i></h3>
+      <div class="container">
+        <i>{{question.notes}}</i>
+      </div>
+      <br><hr>
 
-{{add-answer question=question addAnswer="addAnswer"}}
+      {{add-answer question=question addAnswer="addAnswer"}}
+    </div>
 
-{{answer-listing answers=question.answers}}
+    <div class="col-xs-6 col-lg-4">
+      {{answer-listing answers=question.answers}}
+    </div>
+  </div>
+</div>

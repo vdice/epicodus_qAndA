@@ -18,8 +18,12 @@
       <label for="author">Author</label>
       {{input value=author id="author" class="form-control"}}
     </div>
-
-    <button class="btn btn-success"{{action 'saveQuestion'}}>Save</button>
-    {{#link-to 'index'}}<button class="btn btn-danger">Cancel</button>{{/link-to}}
   </form>
 </div>
+
+<!-- Save -->
+<button class="btn btn-success"{{action 'saveQuestion'}}><i class="fa fa-save"></i></button>
+<!-- Cancel -->
+{{#link-to 'index'}}
+  <button class="btn btn-danger"><i class="fa fa-close"></i></button>
+{{/link-to}}

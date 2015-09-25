@@ -1,10 +1,14 @@
-<h3>Answers:</h3>
-<br>
 <ul>
+  <h3><i>Recent Answers</i></h3>
   {{#each sortedAnswers as |answer|}}
     <li>
+      {{#if displayQuestion}}
+        <p class="question">
+          Q: {{answer.question.query}}
+        </p>
+      {{/if}}
       <h4>
-        <i>{{answer.author}}</i>: <strong>{{answer.content}}</strong>
+        <i>{{answer.author}}</i>: <strong>{{answer.content}}</strong><br>
         <small>{{answer.date}}</small>
       </h4>
       <hr>

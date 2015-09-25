@@ -2,4 +2,14 @@
   <h2>Q & A Message Board</h2>
 </div>
 
-{{question-listing questions=model.questions}}
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 col-sm-6 col-lg-8">
+      {{question-listing questions=model.questions}}
+    </div>
+
+    <div class="col-xs-6 col-lg-4">
+      {{answer-listing answers=model.answers displayQuestion=true}}
+    </div>
+  </div>
+</div>

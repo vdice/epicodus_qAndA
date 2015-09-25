@@ -1,26 +1,22 @@
-{{#if addNewQuestion}}
-  <h1>New Question</h1>
-    <div>
-      <form class="form-horizontal">
-        <div class="form-group">
-          <label for="query">Query</label>
-          {{input value=query id="query" class="form-control"}}
-        </div>
-
-        <div class="form-group">
-          <label for="notes">Notes</label>
-          {{textarea row="4" cols="50" value=notes id="notes" class="form-control"}}
-        </div>
-
-        <div class="form-group">
-          <label for="author">Author</label>
-          {{input value=author id="author" class="form-control"}}
-        </div>
-
-        <button class="btn btn-success"{{action 'saveQuestion'}}>Save</button>
-        <button class="btn"{{action 'queryHide'}}>Cancel</button>
-      </form>
+<h1>New Question</h1>
+<div>
+  <form class="form-horizontal">
+    <div class="form-group">
+      <label for="query">Query</label>
+      {{input value=query id="query" class="form-control"}}
     </div>
-{{else}}
-    <button class="btn" {{action 'queryShow'}}>New Question</button>
-{{/if}}
+
+    <div class="form-group">
+      <label for="notes">Notes</label>
+      {{textarea row="4" cols="50" value=notes id="notes" class="form-control"}}
+    </div>
+
+    <div class="form-group">
+      <label for="author">Author</label>
+      {{input value=author id="author" class="form-control"}}
+    </div>
+
+    <button class="btn btn-success"{{action 'saveQuestion'}}>Save</button>
+    {{#link-to 'index'}}<button class="btn btn-danger">Cancel</button>{{/link-to}}
+  </form>
+</div>

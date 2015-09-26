@@ -14,4 +14,13 @@ test('it renders', function(assert) {
   this.render(hbs`{{new-question}}`);
 
   assert.equal(this.$().text().replace(/\s/g,''), 'AskaQuestionQueryNotesAuthor');
+
+  // Template block usage:
+  // this.render(hbs`
+  //   {{#new-question}}
+  //     template block text
+  //   {{/new-question}}
+  // `);
+  //
+  // assert.equal(this.$().text().trim(), 'template block text');
 });

@@ -14,4 +14,13 @@ test('it renders', function(assert) {
   this.render(hbs`{{modify-question}}`);
 
   assert.equal(this.$().text().trim(), '');
+
+  // Template block usage:
+  // this.render(hbs`
+  //   {{#modify-question}}
+  //     template block text
+  //   {{/modify-question}}
+  // `);
+  //
+  // assert.equal(this.$().text().trim(), 'template block text');
 });

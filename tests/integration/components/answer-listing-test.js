@@ -14,4 +14,13 @@ test('it renders', function(assert) {
   this.render(hbs`{{answer-listing}}`);
 
   assert.equal(this.$().text().trim(), 'Recent Answers');
+
+  // Template block usage:
+  // this.render(hbs`
+  //   {{#answer-listing}}
+  //     template block text
+  //   {{/answer-listing}}
+  // `);
+  //
+  // assert.equal(this.$().text().trim(), 'template block text');
 });

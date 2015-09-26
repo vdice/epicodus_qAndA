@@ -11,11 +11,10 @@
         <label for="author">Author</label>
         {{input value=author id="author" class="form-control" placeholder="Anonymous"}}
       </div>
-
-      <button class="btn btn-primary" {{action 'addAnswer' question}}>Submit</button>
-      <button class="btn btn-cancel" {{action 'hideAnswerForm'}}>Cancel</button>
     </form>
   </div>
+  <button class="btn btn-primary" {{action 'addAnswer' question}}>Submit</button>
+  <button class="btn btn-cancel" {{action 'hideAnswerForm'}}>Cancel</button>
 {{else}}
   <span class="btn btn-primary" {{action 'showAnswerForm'}}>Add Answer</span>
 {{/if}}

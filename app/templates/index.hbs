@@ -1,13 +1,28 @@
-{{jumbotron-header header='Q & A Message Board'}}
+{{#jumbotron-header header='Questions and Answers!'}}
+  <span class="image-display"><br>
+    <small>質問と答え!</small>
+    <img class="hidden animated tada" style="width: 100%; hie: auto;" src="img/cooking-with-dog.jpg" alt="質問と答え" />
+  </span>
+{{/jumbotron-header}}
 
 <div class="container">
   <div class="row">
     <div class="col-xs-12 col-sm-6 col-lg-8">
+      <span class="image-display">
+        <p>バイキンマン</p>
+        <img class="image hidden animated bounceInLeft" src="img/baikinman.png" alt="バイキンマン" />
+      </span>
       {{question-listing questions=model.questions}}
     </div>
 
     <div class="col-xs-6 col-lg-4">
+      <span class="image-display">
+        <p>アンパンマン</p>
+        <img class="image hidden animated bounceInRight " src="img/anpanman.png" alt="アンパンマン" />
+      </span>
       {{answer-listing answers=model.answers displayQuestion=true}}
     </div>
   </div>
 </div>
+
+{{jquery-actions}}

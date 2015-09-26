@@ -1,0 +1,17 @@
+<script type="text/javascript">
+  $(function() {
+    // toggle active tab in nav bar
+    $('.nav-list li').click(function() {
+      $(".nav-list li").removeClass("active");
+      $(this).addClass("active");
+    });
+
+    // toggle image display
+    $('.image-display').click(function() {
+      $(this).find('img').toggleClass('hidden');
+      $(this).find('p').toggleClass('hidden');
+    });
+
+  });
+  {{yield}}
+</script>

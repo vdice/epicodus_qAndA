@@ -11,6 +11,7 @@
 
     <link rel="stylesheet" href="assets/vendor.css">
     <link rel="stylesheet" href="assets/font-awesome-4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/animate.min.css">
     <link rel="stylesheet" href="assets/q-and-a.css">
 
     {{content-for 'head-footer'}}
@@ -20,15 +21,8 @@
 
     <script src="assets/vendor.js"></script>
     <script src="assets/q-and-a.js"></script>
-    <script src="assets/js/moment.min.js"></script>
 
     {{content-for 'body-footer'}}
 
-    <script type="text/javascript">
-     $(document).on('click', '.nav-list li', function() {
-         $(".nav-list li").removeClass("active");
-         $(this).addClass("active");
-     });
-    </script>
   </body>
 </html>

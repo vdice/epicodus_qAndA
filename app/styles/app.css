@@ -1,3 +1,18 @@
+body {
+  font-family: 'Lora', 'Times New Roman', serif;
+  font-size: 20px;
+  color: #404040;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 800;
+}
+
 ul {
   list-style-type: none;
   padding-left:0;
@@ -5,4 +20,28 @@ ul {
 
 .question {
   background-color: #dddddd;
+}
+
+.image-display:hover {
+  cursor: pointer;
+}
+
+.image {
+  height: 610px;
+}
+
+.hidden {
+  display: none;
+}
+
+.fa-pencil {
+  color: #404040;
+}
+
+.fa-pencil:hover {
+  color: blue;
+}
+
+.fa-trash:hover {
+  color: red;
 }

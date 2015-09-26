@@ -16,7 +16,7 @@ export default Ember.Route.extend({
       var newAnswer = this.store.createRecord('answer', params);
       newAnswer.save();
       params.question.save();
-      this.transitionTo('question', params.question.id)
+      this.transitionTo('question', params.question.id);
     }
   }
 });

@@ -1,9 +1,7 @@
-<div class="jumbotron col-xs-12">
-  <h2>
-    {{question.query}}{{modify-question question=question deleteQuestion="deleteQuestion"}}<br>
-    <small><i>{{question.author}}</i></small>
-  </h2>
-</div>
+{{#jumbotron-header header=question.query}}
+  {{modify-question question=question deleteQuestion="deleteQuestion"}}<br>
+  <small><i>{{question.author}}</i></small>
+{{/jumbotron-header}}
 
 <div class="container">
   <div class="row">

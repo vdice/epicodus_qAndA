@@ -8,16 +8,16 @@ export default Ember.Route.extend({
   },
 
   actions: {
-    updateQuestion: function(question, params) {
-      var questionParams = {
+    updateQuestion: function(question) {
+      var params = {
         query: this.get('query'),
         notes: this.get('notes'),
         author: this.get('author')
       };
 
-      Object.keys(questionParams).forEach(function(key) {
-        if(questionParams[key]!==undefined) {
-          question.set(key,questionParams[key]);
+      Object.keys(params).forEach(function(key) {
+        if(params[key]!==undefined) {
+          question.set(key,params[key]);
         }
       });
 

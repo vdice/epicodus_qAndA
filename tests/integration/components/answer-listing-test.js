@@ -6,21 +6,12 @@ moduleForComponent('answer-listing', 'Integration | Component | answer listing',
 });
 
 test('it renders', function(assert) {
-  assert.expect(2);
+  assert.expect(1);
 
   // Set any properties with this.set('myProperty', 'value');
   // Handle any actions with this.on('myAction', function(val) { ... });
 
   this.render(hbs`{{answer-listing}}`);
 
-  assert.equal(this.$().text().trim(), '');
-
-  // Template block usage:
-  this.render(hbs`
-    {{#answer-listing}}
-      template block text
-    {{/answer-listing}}
-  `);
-
-  assert.equal(this.$().text().trim(), 'template block text');
+  assert.equal(this.$().text().trim(), 'Recent Answers');
 });

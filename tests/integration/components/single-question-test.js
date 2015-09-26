@@ -6,21 +6,21 @@ moduleForComponent('single-question', 'Integration | Component | single question
 });
 
 test('it renders', function(assert) {
-  assert.expect(2);
+  assert.expect(1);
 
   // Set any properties with this.set('myProperty', 'value');
   // Handle any actions with this.on('myAction', function(val) { ... });
 
   this.render(hbs`{{single-question}}`);
 
-  assert.equal(this.$().text().trim(), '');
+  assert.equal(this.$().text().replace(/\s/g, ''), 'NotesAddAnswerRecentAnswers');
 
-  // Template block usage:
-  this.render(hbs`
-    {{#single-question}}
-      template block text
-    {{/single-question}}
-  `);
-
-  assert.equal(this.$().text().trim(), 'template block text');
+  // // Template block usage:
+  // this.render(hbs`
+  //   {{#single-question}}
+  //     template block text
+  //   {{/single-question}}
+  // `);
+  //
+  // assert.equal(this.$().text().trim(), 'template block text');
 });

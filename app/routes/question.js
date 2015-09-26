@@ -9,6 +9,11 @@ export default Ember.Route.extend({
 
   actions: {
     deleteQuestion: function(question) {
+      question.get('answers').then(function(answers) {
+        answers.forEach(function(answer) {
+          answer.destroyRecord();
+        });
+      });
       question.destroyRecord();
       this.transitionTo('index');
     },

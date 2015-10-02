@@ -28,7 +28,7 @@
       "author": "Sensei Chipmunk",
       "date": "Friday, September 25, 2015",
       "question": "0",
-      "upVotes": 1
+      "upVotes": 2
     }, {
       "content": "Practice.",
       "author": "Sensei Chipmunk",
@@ -40,13 +40,13 @@
       "author": "Sensei Chipmunk",
       "date": "Friday, September 25, 2015",
       "question": "2",
-      "upVotes": 1
+      "upVotes": 0
     }, {
       "content": "Practice.",
       "author": "Sensei Chipmunk",
       "date": "Friday, September 25, 2015",
       "question": "3",
-      "upVotes": 1
+      "upVotes": -1
     }
   ]
 }

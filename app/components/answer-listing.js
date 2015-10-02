@@ -1,6 +1,6 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
-  sortBy: ['date:desc'],
+  sortBy: ['upVotes:desc'],
   sortedAnswers: Ember.computed.sort('answers', 'sortBy')
 });

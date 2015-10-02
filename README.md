@@ -2,7 +2,10 @@
 
 _**Question and Answer Board.**_
 
+_**This app is live!** It has been deployed via Heroku and can be seen  [**here**](https://shitsumon.herokuapp.com)._
+
 _Users can submit a question and other users can respond with answers._
+
 
 ## Prerequisites
 

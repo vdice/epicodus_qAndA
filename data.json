@@ -26,19 +26,27 @@
     {
       "content": "Practice.",
       "author": "Sensei Chipmunk",
-      "question": "0"
+      "date": "Friday, September 25, 2015",
+      "question": "0",
+      "upVotes": 1
     }, {
       "content": "Practice.",
       "author": "Sensei Chipmunk",
-      "question": "1"
+      "date": "Friday, September 25, 2015",
+      "question": "1",
+      "upVotes": 1
     }, {
       "content": "Practice.",
       "author": "Sensei Chipmunk",
-      "question": "2"
+      "date": "Friday, September 25, 2015",
+      "question": "2",
+      "upVotes": 1
     }, {
       "content": "Practice.",
       "author": "Sensei Chipmunk",
-      "question": "3"
+      "date": "Friday, September 25, 2015",
+      "question": "3",
+      "upVotes": 1
     }
   ]
 }

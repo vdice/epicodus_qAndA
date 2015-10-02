@@ -10,9 +10,33 @@
       {{/if}}
       <h4>
         <i>{{answer.author}}</i>: <strong>{{answer.content}}</strong><br>
-        <small>{{format-date answer.date}}</small>
+        <small>
+          {{moment-from-now answer.date}}
+          {{#unless displayVote}}
+            <i class="fa fa-thumbs-o-up"> {{answer.upVotes}}</i>
+          {{/unless}}
+        </small>
+
+        {{#if displayVote}}
+          <br><br>
+          {{vote-tile answer=answer}}
+          <span> Votes: {{answer.upVotes}}</span>
+        {{/if}}
       </h4>
       <hr>
     </li>
   {{/each}}
 </ul>
+
+<script type="text/javascript">
+  $(function() {
+    $('.thumb-icon').hover(
+      function() {
+        $(this).toggleClass('fa-lg');
+      },
+      function() {
+        $(this).toggleClass('fa-lg');
+      }
+    );
+  });
+</script>

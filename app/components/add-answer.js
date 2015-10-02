@@ -15,9 +15,10 @@ export default Ember.Component.extend({
         content: this.get('content'),
         author: this.get('author') ? this.get('author') : 'Anonymous',
         question: question,
-        date: new Date()
+        date: new Date(),
+        upVotes: 0
       };
-      
+
       this.sendAction('addAnswer', params);
       this.set('addAnswerForm', false);
     }

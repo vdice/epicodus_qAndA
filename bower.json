@@ -15,6 +15,7 @@
     "ember-addons.bs_for_ember": "~0.7.0",
     "bootstrap": "~3.3.2",
     "firebase": "^2.1.0",
-    "moment": "~2.10.6"
+    "moment": ">= 2.8.0",
+    "moment-timezone": ">= 0.1.0"
   }
 }
